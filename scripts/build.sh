@@ -52,7 +52,7 @@ case "${1}" in
     build_ui
     build_manual
     build_server
-    run_test
+    # run_test
     # build_cli
     ;;
   cli)
