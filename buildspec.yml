@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - chmod u+x ./scripts/build.sh
+      - ./scripts/build.sh all
+      - mv otoroshi/target/scala-2.12/nio.jar .
+artifacts:
+  type: zip
+  files:
+    - 'nio.jar'
+    - 'Procfile'
+    - '.ebextensions/**/*'
+cache:
+  paths:
+    - '/root/.ivy2/cache/**/*'
