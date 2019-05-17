@@ -12,6 +12,7 @@ artifacts:
     - 'nio.jar'
     - 'Procfile'
     - 'run.sh'
+    - 'rds-combined-ca-bundle.pem'
     - '.ebextensions/**/*'
 cache:
   paths:
