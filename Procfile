@@ -1,1 +1,1 @@
-web: java -jar nio.jar
+web: sh ./run.sh
