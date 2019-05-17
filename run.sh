@@ -1,1 +1,1 @@
-exec wget https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem && keytool -importcert -trustcacerts -file rds-combined-ca-bundle.pem -alias rds -keystore rds-ca-certs -storepass $CA_STORE_PASSWORD -noprompt && java -jar nio.jar
+keytool -importcert -trustcacerts -file rds-combined-ca-bundle.pem -alias rds -keystore rds-ca-certs -storepass $CA_STORE_PASSWORD -noprompt && java -jar nio.jar
