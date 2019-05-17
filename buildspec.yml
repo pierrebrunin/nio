@@ -11,6 +11,7 @@ artifacts:
   files:
     - 'nio.jar'
     - 'Procfile'
+    - 'run.sh'
     - '.ebextensions/**/*'
 cache:
   paths:
