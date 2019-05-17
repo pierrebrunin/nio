@@ -5,7 +5,7 @@ phases:
     commands:
       - chmod u+x ./scripts/build.sh
       - ./scripts/build.sh all
-      - mv otoroshi/target/scala-2.12/nio.jar .
+      - mv nio-server/target/scala-2.12/nio.jar .
 artifacts:
   type: zip
   files:
